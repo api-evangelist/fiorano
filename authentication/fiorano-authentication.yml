@@ -1,0 +1,19 @@
+generated: '2026-10-20'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.fiorano.com/esb/13.2/authentication.md
+sources:
+- https://docs.fiorano.com/esb/13.2/authentication.md
+- https://docs.fiorano.com/esb/13.2/authentication-and-authorization.md
+- https://docs.fiorano.com/esb/13.2/extending-authentication.md
+- https://docs.fiorano.com/esb/13.2/using-api-key-in-the-reststub-microservice.md
+description: Authentication schemes published for Fiorano ESB 13.2
+schemes:
+- type: apiKey
+  name: APIKey
+  evidence: When Fiorano RestStub checks for the query parameter "APIKey", if it is not found, it checks for the Header Param "APIKey" and validates
+    the user if the user has the permission to invoke that particular service.
+  location: query/header
+  header: APIKey
+  how_to_obtain: Created in the Dashboard under Security tab for REST services; the generated API Key is copied and used in requests.
+docs: https://docs.fiorano.com/esb/13.2/authentication.md

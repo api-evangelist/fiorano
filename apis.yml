@@ -1,23 +1,80 @@
 aid: fiorano
+
 name: Fiorano Software
-description: 'Fiorano Software is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.fiorano.com/assets/images/common/Fiorano-logo-share.jpg
+
+description: 'Fiorano Software provides a hybrid integration platform and API management solutions for enterprises. Their suite includes Fiorano Integration Platform, API Management, FioranoMQ, and B2B integration, enabling real‑time data flow, microservices orchestration, and secure messaging across on‑premise and cloud environments. The company serves industries such as banking, healthcare, logistics, and energy, offering robust tools for digital transformation and enterprise connectivity.'
+
 url: https://raw.githubusercontent.com/api-evangelist/fiorano/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
 - Company
-apis: []
+- Integration
+- API Management
+- Enterprise
+- Messaging
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Authentication
+  url: authentication/fiorano-authentication.yml
+- type: LLMsTxt
+  url: llms/fiorano-llms.txt
+- type: Hosts
+  url: hosts/fiorano-hosts.yml
+- type: DomainSecurity
+  url: security/fiorano-domain-security.yml
 - type: Website
   url: https://fiorano.com/
+- type: Documentation
+  url: https://www.fiorano.com/developers
+- type: APIReference
+  url: https://www.fiorano.com/developers
+- type: GettingStarted
+  url: https://www.fiorano.com/developers
+- type: Support
+  url: https://support.fiorano.com
+- type: Blog
+  url: https://www.fiorano.com/blogs
+- type: Pricing
+  url: https://www.fiorano.com/pricing
+- type: TermsOfService
+  url: https://www.fiorano.com/terms
+- type: PrivacyPolicy
+  url: https://www.fiorano.com/privacy
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: "Developer pages return HTML only with no OpenAPI, GraphQL, or other machine‑readable contract."
+  evidence:
+    - url: https://www.fiorano.com/developers
+      status: 200
+  checked: '2026-10-20'
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

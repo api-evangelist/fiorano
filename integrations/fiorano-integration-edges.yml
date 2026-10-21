@@ -1,0 +1,18 @@
+generated: '2026-10-20'
+method: none
+source:
+- https://zapier.com/apps/fiorano/integrations
+- https://zapier.com/apps/fiorano-software/integrations
+- https://n8n.io/integrations/fiorano/
+- https://composio.dev/toolkits/fiorano
+- https://monid.ai/tools/fiorano
+checked:
+- https://composio.dev/toolkits/fiorano
+- https://monid.ai/tools/fiorano
+- https://n8n.io/integrations/fiorano/
+- https://zapier.com/apps/fiorano-software/integrations
+- https://zapier.com/apps/fiorano/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
